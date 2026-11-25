@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenZone 2.0 | Calm Your Mind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h1>ZenZone</h1>
+    <ul>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Mood Journal</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <p>✦ YOUR PERSONAL CALM SPACE</p>
+    <h2>Pause the noise. Find your peace.</h2>
+    <p>
+        Life gets busy. Your mind deserves a break.
+        Take a moment, breathe deeply, and give yourself the calm you need.
+    </p>
+    <button>Explore Your Calm ↗</button>
+</section>
+
+<section class="mood">
+    <h2>How are you feeling?</h2>
+    <p>Check in with yourself.</p>
+
+    <div class="emoji-container">
+        <span>😊</span>
+        <span>😌</span>
+        <span>😴</span>
+        <span>😣</span>
+        <span>😔</span>
+    </div>
+</section>
+
+<section class="toolkit">
+    <h2>Your Calm Toolkit</h2>
+
+    <div class="card">
+        <h3>🌬️ Breathing Space</h3>
+        <div id="breathing-circle"></div>
+        <button onclick="startBreathing()">Start Breathing</button>
+    </div>
+
+    <div class="card">
+        <h3>⏳ Focus Zone</h3>
+        <h1 id="timer">02:00</h1>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="card">
+        <h3>📝 Mind Dump</h3>
+        <textarea id="notes" placeholder="Write anything..."></textarea>
+        <button onclick="saveNotes()">Save on this Device</button>
+        <button onclick="clearNotes()">Clear</button>
+    </div>
+</section>
+
+<section class="quote">
+    <p id="quoteText">
+        "You don't have to figure everything out today."
+    </p>
+    <button onclick="newQuote()">Another reminder ↗</button>
+</section>
+
+<footer>
+    Made with 💚 for a calmer mind.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
